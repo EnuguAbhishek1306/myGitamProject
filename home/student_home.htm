@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>StudentHome</title>
+	<link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous" />
+
+	<link rel="stylesheet" type="text/css" href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel='short icon' type="image" href="gitam1logo.jpg">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+   
+<style>
+    .Navbar {
+  background-color:#831313;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+}
+.Navbar__Link {
+  padding-right: 8px;
+}
+.Navbar__Items {
+  display: flex;
+}
+.Navbar__Items--right {
+  margin-left:auto;
+}
+.Navbar__Link-toggle {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+  
+.Navbar__Items {
+    display:none;
+    justify-content: center;
+  }
+.Navbar__Items--right {
+    margin-left:0;
+  }
+.Navbar__ToggleShow {
+    display: flex;
+  }
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}
+button{
+          border-radius: 3ch;
+      }
+
+body{
+  background-color: F2E2D3;
+}
+</style>
+</head>
+
+<body class="" style="background-color: rgb(242, 226, 211); height: 85%; width: auto;font-family: 'Muli', sans-serif;">
+    <header style="background-color:white;">
+        <div style="float: right; padding-top: 15px; padding-right: 20px;">
+            <h3>WELCOME AKSHIT</h3>
+        </div>
+            <div class="row bg-faded " style="background-color:white;">
+                <div class="   col-md-6 p-2 "  >
+                    <img src="GITAM_Logo.png" class=""  style="height:50px; padding-left: 3%;"> <!-- center this image within the column -->
+                </div>
+            </div>
+            
+        
+    </header>
+    <div class="Navbar" style="justify-content: center;">
+       
+         <div class="Navbar__Link Navbar__Link-toggle">
+           <i class="fa fa-list"></i>
+         </div>
+       <nav class="Navbar__Items">
+         
+        <div class="Navbar__Link">
+            
+            <a class="nav-link  " style="font-weight: bolder; color: white;" href="#">home</a>
+        
+        </div>
+        <div class="Navbar__Link">
+          
+            <a class="nav-link  " style="font-weight: bolder; color: white;" href="#">Change Password</a>
+      
+        </div>
+       
+       
+            <button class="nav-link "style="font-weight: bolder; color:black ;" href="#">Logout</button>
+        
+       </nav>
+      
+     </div>
+     <h1 style="padding-left: 5%;padding-top: 5%;">
+         Time Table
+     </h1>
+     <div style="padding-left: 5%;padding-top: 1%;font-size:x-large;">
+        Complete your course registration to view your time table <a href="" style="text-decoration: underline">Click here to complete course registration </a>
+     </div>
+
+     <script>
+         function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
+     </script>
+</body>
+
+
+</html>

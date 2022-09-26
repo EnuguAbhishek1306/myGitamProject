@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="couseRegistration1.css">
+  <title>CourseRegistration</title>
+  <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+    <link rel='short icon' type="image" href="gitam1logo.jpg">
+
+<link rel="stylesheet" type="text/css" href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style>
+   th {
+    border:1px solid black;
+  }
+  table ,th,td{
+        border-collapse: separate;
+        border-spacing: 0 15px;
+      }
+  </style>
+</head>
+<body style= " background-color: rgb(242, 226, 211); height: 85%; width: auto;font-family: 'Muli', sans-serif; ">
+  <header style="background-color:white;">
+    <div style="float: right; padding-top: 15px; padding-right: 20px;">
+        <h3>WELCOME AKSHIT</h3>
+    </div>
+        <div class="row bg-faded " style="background-color:white;">
+            <div class="   col-md-6 p-2 "  >
+                <img src="GITAM_Logo.png" class=""  style="height:50px; padding-left: 3%;"> 
+            </div>
+        </div>
+        
+    
+  </header>
+  <nav class="navbar navbar-expand-md navbar-dark " style="
+            background-color:#831313;
+            display: flex;
+            padding: 16px;
+            font-family: 'Muli', sans-serif ;
+            color: white;
+          ">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="font-size: 25px;">Course Registration</a>
+                    </li>
+                 
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 Navbar__Items">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bolder; color: white;" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bolder; color: white;" href="#">Change Password</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link"  href="#" style="font-weight: bolder; color:black ;border-radius: 1ch;">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        
+       <!-- <nav class="Navbar__Items">
+         
+        <div class="Navbar__Link">
+            
+            <a class="nav-link  " style="font-weight: bolder; color: white;" href="#">home</a>
+        
+        </div>
+        <div class="Navbar__Link">
+          
+            <a class="nav-link  " style="font-weight: bolder; color: white;" href="#">Change Password</a>
+      
+        </div>
+       
+       
+            <button class="nav-link "style="font-weight: bolder; color:black ;" href="#">Logout</button> -->
+        
+       </nav>
+      </div>
+     
+      <div class="pt=3" style="padding-top: 20px;" >
+         <form class="pl-5 pt=3 "> 
+             <h3 class="pt=3">Select a set</h3> 
+             <!-- <label> Select a set </label>   -->
+             <div class="pl-5 py-3">
+             <select style="width: 250px; height: 40px;">  
+             <option value = "Set1">Set1   
+             </option>  
+             <option value = "Set2">Set2    
+             </option>  
+             <option value = "Set3">Set3
+             </option>  
+             <option value = "Set4">Set4
+             </option>  
+             </select> 
+             </div> 
+         </form>
+      </div>
+      <div class="pl-5">
+        <h3>Open Electives</h3>
+        <div action="openElectives" class="pl-5 py-2">
+          <table>
+          <tr>
+            <th class="p-2">
+              <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives">
+            </th>
+            <th class="p-2">
+              Elective name
+            </th>
+            <th class="p-2">
+              L
+            </th>
+            <th class="p-2">
+              T
+            </th>
+            <th class="p-2">
+              P 
+            </th>
+            <th class="p-2">
+              C
+            </th>
+          </tr>
+          <tr>
+            <th class="p-2">
+              <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives">
+            </th>
+            <th class="p-2">
+              Elective name
+            </th>
+            <th class="p-2">
+              L
+            </th>
+            <th class="p-2">
+              T
+            </th>
+            <th class="p-2">
+              P 
+            </th>
+            <th class="p-2">
+              C
+            </th>
+          </tr>   
+       </table>
+      </div> 
+    </div> 
+    <div class="pl-5"  >
+      <h3>Mandatory Courses</h3>
+      <div action="mandatory courses"  class="pl-5 py-2">
+        <table>
+         <tr>
+           <th class="p-2">
+             <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives" >
+           </th>
+           <th class="p-2">
+             Course Name
+           </th>
+           <th class="p-2">
+             L
+           </th>
+           <th class="p-2">
+             T
+           </th>
+           <th class="p-2">
+             P 
+           </th>
+           <th class="p-2">
+             C
+           </th>
+         </tr>
+         <tr>
+          <th class="p-2">
+            <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives" >
+          </th>
+          <th class="p-2">
+            Course Name
+          </th>
+          <th class="p-2">
+            L
+          </th>
+          <th class="p-2">
+            T
+          </th>
+          <th class="p-2">
+            P 
+          </th>
+          <th class="p-2">
+            C
+          </th>
+        </tr>
+        <tr>
+          <th class="p-2">
+            <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives" >
+          </th>
+          <th class="p-2">
+            Course Name
+          </th>
+          <th class="p-2">
+            L
+          </th>
+          <th class="p-2">
+            T
+          </th>
+          <th class="p-2">
+            P 
+          </th>
+          <th class="p-2">
+            C
+          </th>
+        </tr>
+        <tr>
+          <th class="p-2">
+            <input type="checkbox" id="1st Electives" name="1st Electives" value="Electives" >
+          </th>
+          <th class="p-2">
+            Course Name
+          </th>
+          <th class="p-2">
+            L
+          </th>
+          <th class="p-2">
+            T
+          </th>
+          <th class="p-2">
+            P 
+          </th>
+          <th class="p-2">
+            C
+          </th>
+        </tr>
+         
+      </table>
+      
+     <script>
+      function classToggle() {
+      const navs = document.querySelectorAll('.Navbar__Items')
+
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+     }
+      document.querySelector('.Navbar__Link-toggle')
+      .addEventListener('click', classToggle);
+  </script>
+    <script type="text/javascript">
+      document.addEventListener("contextmenu",function(e){
+        e.preventDefault();
+      });
+    $(document).ready(function() {
+     $("img").on("contextmenu",function(){
+        return false;
+     }); 
+ });
+   
+   </script>
+</body>
+</html>
+

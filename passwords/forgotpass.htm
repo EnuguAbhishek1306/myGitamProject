@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='short icon' type="image" href="gitam1logo.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <style>
+        
+        label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        }
+        .firstheading{
+          padding-top: 3%; 
+          padding-left: 5%
+        }
+        .container{
+          padding-top: 10%;
+        }
+        /* @media screen and (min-width:2000px) {
+          .container{
+          padding-top: 1%;
+          }
+        }
+        @media screen and (max-width:900px) {
+          .container{
+          padding-top: 15%;
+          }
+        } */
+
+    </style>
+</head>
+<body class="" style="background-color: rgb(242, 226, 211);font-family: 'Muli', sans-serif;">
+    <header style="background-color:white;">
+            <div class="row bg-faded " style="background-color:white;">
+                <div class=" mx-auto text-center col-md-6 p-2 ">
+                    <img src="GITAM_Logo.png" class=""  style="height: 75px;"> <!-- center this image within the column -->
+                </div>
+            </div>
+            <hr>
+    </header>
+    <div>
+        <div class="firstheading md-pt-5" >
+            <h1>Forgot Password</h1>
+        </div>
+        <div class="container py-auto my-auto sm-pt-5" >
+            <div  class="justify-content: center;mx-auto text-center ">
+                <form action="/form/submit" method="post">
+                    <div>
+                      <label style="font-size: 13PX; font-weight: bolder;">Enter student email ID</label>
+                      <input type="text" class="">
+                    </div>
+                    <div>
+                        <label style="font-size: 13px; font-weight: bolder;"><span>Enter recovery code</span></label>
+                        <input type="password" class="">
+                      </div>
+                    <div class="mx-auto text-center col-md-3 p-2">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      document.addEventListener("contextmenu",function(e){
+        e.preventDefault();
+      });
+    ;
+   </script>
+</body>
+</html>
